@@ -7,5 +7,38 @@ namespace PRG2_assg
     class Screening
     {
         //Last updated: 21/1/2022
+
+        //attr
+        public int ScreeningNo { get; set; }
+
+        public DateTime ScreeningDateTIme { get; set; }
+
+        public string ScreeningType { get; set; }  
+
+        public int SeatsRemaining { get; set; }
+
+        public Cinema cinema { get; set; }
+
+        public Movie movie { get; set; }
+        //constructor
+        public Screening() { }
+
+        public Screening(int num, DateTime dt, string st, Cinema c, Movie m)
+        {
+            ScreeningNo = num;
+            ScreeningDateTIme = dt;
+            ScreeningType = st;
+            cinema = c;
+            movie = m;
+        }
+
+        public override string ToString()
+        {
+            return "ScreeningNo: " + ScreeningNo + "ScreeningDateTime: " + ScreeningDateTIme + "ScreenType: " + ScreeningType + "Cinema: " + cinema + "Movie: " + movie;
+        }
+
+
+
+
     }
 }
