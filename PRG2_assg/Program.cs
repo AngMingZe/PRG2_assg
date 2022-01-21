@@ -6,9 +6,7 @@ namespace PRG2_assg
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("test");
-            //Testing pull
+            //Last updated: 21/1/2022
         }
     }
 }
