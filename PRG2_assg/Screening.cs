@@ -11,7 +11,7 @@ namespace PRG2_assg
         //attr
         public int ScreeningNo { get; set; }
 
-        public DateTime ScreeningDateTIme { get; set; }
+        public DateTime ScreeningDateTime { get; set; }
 
         public string ScreeningType { get; set; }  
 
@@ -26,7 +26,7 @@ namespace PRG2_assg
         public Screening(int num, DateTime dt, string st, Cinema c, Movie m)
         {
             ScreeningNo = num;
-            ScreeningDateTIme = dt;
+            ScreeningDateTime = dt;
             ScreeningType = st;
             cinema = c;
             movie = m;
@@ -34,7 +34,7 @@ namespace PRG2_assg
 
         public override string ToString()
         {
-            return "ScreeningNo: " + ScreeningNo + "ScreeningDateTime: " + ScreeningDateTIme + "ScreenType: " + ScreeningType + "Cinema: " + cinema + "Movie: " + movie;
+            return "ScreeningNo: " + ScreeningNo + "ScreeningDateTime: " + ScreeningDateTime + "ScreenType: " + ScreeningType + "Cinema: " + cinema + "Movie: " + movie;
         }
 
 
